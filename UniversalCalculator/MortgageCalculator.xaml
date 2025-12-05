@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <TextBlock x:Name="txtblk_morHeader" HorizontalAlignment="Center" Height="72" Margin="0,50,0,0" TextWrapping="Wrap" Width="1500" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" TextAlignment="Center" RenderTransformOrigin="0.496,0.194" Text="Mortgage calculator"/>
+        <TextBlock x:Name="txtblk_morHeader" HorizontalAlignment="Center" Height="84" Margin="0,50,0,0" TextWrapping="Wrap" Width="1500" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" TextAlignment="Center" RenderTransformOrigin="0.496,0.194" Text="Mortgage calculator"/>
         <TextBlock x:Name="txtblk_morPrinciple" HorizontalAlignment="Left" Height="72" Margin="12,200,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Principal borrowed: $ " TextAlignment="Right"/>
         <TextBlock x:Name="txtblk_morYears" HorizontalAlignment="Left" Height="72" Margin="12,300,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Years: " TextAlignment="Right"/>
         <TextBlock x:Name="txtblk_morMonths" HorizontalAlignment="Left" Height="72" Margin="12,400,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Months: " TextAlignment="Right"/>

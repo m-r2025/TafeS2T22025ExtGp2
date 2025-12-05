@@ -39,7 +39,7 @@ namespace Calculator
 		}
 
 		private void btn_morCalculate_Click(object sender, RoutedEventArgs e)
-		{			
+		{		//	
 			try
 			{
 				double p = double.Parse(txtbox_morPrincipal.Text);
