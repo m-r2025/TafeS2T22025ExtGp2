@@ -51,5 +51,10 @@ namespace Calculator
 		{
 			Application.Current.Exit();
 		}
+
+		private void btn_currencyCalculator_Copy_Click(object sender, RoutedEventArgs e)
+		{
+			txtblk_laterDevelopment.Text = "Trip calculator C# code will be developed later";
+		}
 	}
 }

@@ -15,5 +15,7 @@
         <Button x:Name="btn_currencyCalculator" Content="Currency Calculator" Height="76" Margin="0,690,0,0" Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btn_currencyCalculator_Click"/>
         <Button x:Name="btn_exit" Content="Exit" Height="76" Margin="0,890,0,0"  Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btn_exit_Click"/>
         <Image x:Name="img_logo" HorizontalAlignment="Center" Height="358" Margin="0,10,0,0" VerticalAlignment="Top" Width="530" Source="/Images/abacus.jpg"/>
+        <Button x:Name="btn_currencyCalculator_Copy" Content="Trip Calculator" Height="76" Margin="0,792,0,0" Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btn_currencyCalculator_Copy_Click"/>
+        <TextBlock x:Name="txtblk_laterDevelopment" HorizontalAlignment="Left" Margin="19,792,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="98" Width="480" FontSize="36"/>
     </Grid>
 </Page>
