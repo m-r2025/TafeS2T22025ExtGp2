@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Calculator.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="mainMenuHeader" HorizontalAlignment="Center" Height="72" Margin="0,374,0,0" TextWrapping="Wrap" Text="Universal Calculator" Width="1500" SelectionChanged="TextBlock_SelectionChanged" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" TextAlignment="Center"/>
+        <Button x:Name="btn_mathCalculator" Content="Math Calculator" Height="76" Margin="0,470,0,0" Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="btn_mortgageCalculator" Content="Mortgage Calculator" Height="76" Margin="0,578,0,0"  Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="btn_currencyCalculator" Content="Currency Calculator" Height="76" Margin="0,690,0,0" Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="btn_exit" Content="Exit" Height="76" Margin="0,890,0,0"  Width="420"  FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Image x:Name="img_logo" HorizontalAlignment="Left" Height="358" Margin="960,0,0,0" VerticalAlignment="Top" Width="530" Source="/Images/abacus.jpg"/>
+    </Grid>
+</Page>
