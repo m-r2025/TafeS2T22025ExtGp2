@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
+
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+
+namespace Calculator
+{
+	/// <summary>
+	/// An empty page that can be used on its own or navigated to within a Frame.
+	/// </summary>
+	public sealed partial class CurrencyConvertor : Page
+	{
+		public CurrencyConvertor()
+		{
+			this.InitializeComponent();
+		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainMenu));
+		}
+
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				double amount = double.Parse(txtbox_curAmount.Text);
+				double result = Math.Round(amount * 0.85189982, 2);
+				txtblk_curDollar.Text = amount.ToString() + " US Dollar";
+				txtblk_curEuro.Text = " €" + result.ToString()+" Euros";
+			}
+			catch (Exception ex) { }
+		}
+	}
+}

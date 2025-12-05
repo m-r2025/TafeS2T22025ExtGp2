@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConvertor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid RenderTransformOrigin="0.504,0.243">
+        <TextBlock x:Name="txtblk_curHeader" HorizontalAlignment="Left" Height="75" Margin="352,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="787" Text="Currency Conversion calculator" FontSize="48" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="txtblk_curAmount" HorizontalAlignment="Left" Height="73" Margin="100,103,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="182" FontSize="48" TextAlignment="Center"/>
+        <TextBlock x:Name="txtblk_curFrom" HorizontalAlignment="Left" Height="73" Margin="600,103,0,0" TextWrapping="Wrap" Text="From" VerticalAlignment="Top" Width="182" FontSize="48" TextAlignment="Center"/>
+        <TextBlock x:Name="txtblk_curTo" HorizontalAlignment="Left" Height="73" Margin="1100,103,0,0" TextWrapping="Wrap" Text="To" VerticalAlignment="Top" Width="182" FontSize="48" TextAlignment="Center"/>
+        <TextBox x:Name="txtbox_curAmount" HorizontalAlignment="Left" Height="69" Margin="59,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" FontSize="36" AcceptsReturn="True" TextAlignment="Center"/>
+        <ComboBox Name="myComboBox" Width="466" Height="69" Margin="455,198,0,0" FontSize="48" SelectedIndex="0">
+            <StackPanel Orientation="Horizontal" Margin="0,0,-23,0">
+                <TextBlock Text="USD - US Dollar" VerticalAlignment="Center" Width="331" />
+                <Image  Width="132" Height="40" Source="/Images/USA1.PNG" />
+            </StackPanel>
+        </ComboBox>
+        <ComboBox Name="myComboBox1" Width="412" Height="69" Margin="991,198,0,0" FontSize="48" SelectedIndex="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="EUR - Euro" Width="227" />
+                <Image  Width="186" Height="52" Source="/Images/EUR1.PNG" />
+            </StackPanel>
+        </ComboBox>
+        <TextBlock x:Name="txtblk_curDollar" HorizontalAlignment="Left" Margin="59,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" Height="49" FontSize="36"/>
+        <TextBlock x:Name="txtblk_curEuro" HorizontalAlignment="Left" Margin="49,461,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242" Height="60" FontSize="36" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="49,596,0,0" TextWrapping="Wrap" Text="1 USD = 0.85189982 Euros" VerticalAlignment="Top" Width="294" Height="37" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,676,0,0" TextWrapping="Wrap" Text="1 Euro = 1.1739732 USD" VerticalAlignment="Top" Width="294" Height="37" FontSize="22"/>
+        <Button Content="Calculate Currency" Margin="437,743,0,0" VerticalAlignment="Top" Width="529" Height="86" FontSize="36" Click="Button_Click_1"/>
+        <Button Content="Exit" Margin="437,856,0,0" VerticalAlignment="Top" Width="529" Height="86" FontSize="36" Click="Button_Click"/>
+
+
+
+    </Grid>
+</Page>
