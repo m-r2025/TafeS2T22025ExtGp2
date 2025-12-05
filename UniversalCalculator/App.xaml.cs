@@ -30,7 +30,7 @@ namespace Calculator
 			if (e.PrelaunchActivated == false)
 			{
 				if (rootFrame.Content == null)
-					rootFrame.Navigate(typeof(CurrencyConvertor), e.Arguments);
+					rootFrame.Navigate(typeof(MortgageCalculator), e.Arguments);
 
 				Window.Current.Activate();
 			}

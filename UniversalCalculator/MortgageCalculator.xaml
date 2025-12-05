@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Calculator.MortgageCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <TextBlock x:Name="txtblk_morHeader" HorizontalAlignment="Center" Height="70" Margin="0,50,0,0" TextWrapping="Wrap" Width="1500" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" TextAlignment="Center" RenderTransformOrigin="0.496,0.194" Text="Mortgage calculator"/>
+        <TextBlock x:Name="txtblk_morPrinciple" HorizontalAlignment="Left" Height="72" Margin="12,200,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Principal borrowed: $ " TextAlignment="Right"/>
+        <TextBlock x:Name="txtblk_morYears" HorizontalAlignment="Left" Height="72" Margin="12,300,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Years: " TextAlignment="Right"/>
+        <TextBlock x:Name="txtblk_morMonths" HorizontalAlignment="Left" Height="72" Margin="12,400,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Months: " TextAlignment="Right"/>
+        <TextBlock x:Name="txtblk_morAIR" HorizontalAlignment="Left" Height="72" Margin="12,500,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Annual Interest Rate: % " TextAlignment="Right"/>
+        <TextBlock x:Name="txtblk_morMIR" HorizontalAlignment="Left" Height="72" Margin="30,600,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" RenderTransformOrigin="0.496,0.194" Text="Monthly Interest Rate: " TextAlignment="Right"/>
+        <TextBlock x:Name="txtblk_morMP" HorizontalAlignment="Left" Height="72" Margin="4,700,0,0" TextWrapping="Wrap" Width="650" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" TextAlignment="Right" RenderTransformOrigin="0.496,0.194" Text="Monthly Repayment: "/>
+        <TextBox x:Name="txtbox_morPrincipal" HorizontalAlignment="Left" Margin="708,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="750" Height="79" FontSize="48"/>
+        <TextBox x:Name="txtbox_morYears" HorizontalAlignment="Left" Margin="708,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="750" Height="79" FontSize="48"/>
+        <TextBox x:Name="txtbox_morMonths" HorizontalAlignment="Left" Margin="708,398,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="750" Height="79" FontSize="48"/>
+        <TextBox x:Name="txtbox_morAIR" HorizontalAlignment="Left" Margin="708,498,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="750" Height="79" FontSize="48"/>
+        <TextBox x:Name="txtbox_morMIR" HorizontalAlignment="Left" Margin="708,598,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="750" Height="79" FontSize="48"/>
+        <TextBox x:Name="txtbox_morMP" HorizontalAlignment="Left" Margin="708,698,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="750" Height="79" FontSize="48"/>
+        <Button x:Name="btn_morExit" Content="Exit" Margin="1200,826,0,0" VerticalAlignment="Top" Width="236" Height="82" FontSize="48" Click="btn_morExit_Click"/>
+        <Button x:Name="btn_morCalculate" Content="Calculate" Margin="818,826,0,0" VerticalAlignment="Top" Width="326" Height="82" FontSize="48" Click="btn_morCalculate_Click"/>
+    </Grid>
+</Page>
